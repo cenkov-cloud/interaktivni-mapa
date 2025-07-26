@@ -145,5 +145,19 @@
     "lng": 14.4118,
     "url": "misto21.html",
     "barva": "cervena"
+  },
+  {
+    "nazev": "Kazatelna Milanova",
+    "lat": 50.2504,
+    "lng": 14.41395,
+    "url": "misto22.html",
+    "barva": "cervena"
+  },
+  {
+    "nazev": "Kazatelna Zateplená",
+    "lat": 50.2504,
+    "lng": 14.41395,
+    "url": "misto23.html",
+    "barva": "cervena"
   }
 ]
