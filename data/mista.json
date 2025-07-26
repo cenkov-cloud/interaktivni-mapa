@@ -1,22 +1,23 @@
 [
   {
-    "nazev": "Kavárna U Stromu",
-    "lat": 50.0755,
-    "lng": 14.4378,
+    "nazev": "Zásyp u Jordánu",
+    "lat": 50.2448,
+    "lng": 14.3997,
     "url": "misto1.html",
     "barva": "modra"
   },
   {
-    "nazev": "Galerie Moderního Umění",
-    "lat": 50.077,
-    "lng": 14.42,
+    "nazev": "Kazatelna U Javora",
+    "lat": 50.2480,
+    "lng": 14.4041,
     "url": "misto2.html",
     "barva": "cervena"
   },
   {
-    "nazev": "Park Vinohrady",
-    "lat": 50.078,
-    "lng": 14.44,
-    "url": "misto3.html"
+    "nazev": "Zásyp U Javora",
+    "lat": 50.2477,
+    "lng": 14.4041,
+    "url": "misto3.html",
+    "barva": "cervena"
   }
 ]
