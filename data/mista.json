@@ -159,5 +159,19 @@
     "lng": 14.4125,
     "url": "misto23.html",
     "barva": "cervena"
+  },
+  {
+    "nazev": "Žebřík na Plynu",
+    "lat": 50.2557,
+    "lng": 14.4106,
+    "url": "misto24.html",
+    "barva": "cervena"
+  }},
+  {
+    "nazev": "Žebřík na Plynu k rákosu",
+    "lat": 50.2558,
+    "lng": 14.4090,
+    "url": "misto25.html",
+    "barva": "cervena"
   }
 ]
