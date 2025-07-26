@@ -1,8 +1,22 @@
 [
   {
     "nazev": "Kavárna U Stromu",
-    "lat": 50.09,
+    "lat": 50.0755,
+    "lng": 14.4378,
+    "url": "misto1.html",
+    "barva": "modra"
+  },
+  {
+    "nazev": "Galerie Moderního Umění",
+    "lat": 50.077,
+    "lng": 14.42,
+    "url": "misto2.html",
+    "barva": "cervena"
+  },
+  {
+    "nazev": "Park Vinohrady",
+    "lat": 50.078,
     "lng": 14.44,
-    "url": "misto1.html"
+    "url": "misto3.html"
   }
 ]
