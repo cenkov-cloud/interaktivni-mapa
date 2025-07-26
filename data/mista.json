@@ -47,5 +47,12 @@
     "lng": 14.3852,
     "url": "misto7.html",
     "barva": "modra"
+  },
+   {
+    "nazev": "Kazatelna v Jezírkách",
+    "lat": 50.2446,
+    "lng": 14.3889,
+    "url": "misto8.html",
+    "barva": "cervena"
   }
 ]
