@@ -25,7 +25,7 @@
       .then(data => {
         data.forEach(misto => {
           const marker = L.marker([misto.lat, misto.lng]).addTo(map);
-          marker.bindPopup(`<a href="\${basePath}\${misto.url}">\${misto1.nazev}</a>`);
+          marker.bindPopup(`<a href="\${basePath}\${misto.url}">\${misto.nazev}</a>`);
         });
       });
   </script>
