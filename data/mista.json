@@ -82,5 +82,19 @@
     "lng": 14.4181,
     "url": "misto12.html",
     "barva": "modra"
+  },
+   {
+    "nazev": "Zásyp na Špičáku",
+    "lat": 50.2414,
+    "lng": 14.4166,
+    "url": "misto13.html",
+    "barva": "modra"
+  },
+   {
+    "nazev": "Zásyp u Potoka",
+    "lat": 50.2478,
+    "lng": 14.4069,
+    "url": "misto14.html",
+    "barva": "modra"
   }
 ]
