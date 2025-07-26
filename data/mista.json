@@ -194,5 +194,12 @@
     "lng": 14.4122,
     "url": "misto28.html",
     "barva": "cervena"
+  },
+  {
+    "nazev": "Žebřík Na Vrbě",
+    "lat": 50.2518,
+    "lng": 14.4051,
+    "url": "misto29.html",
+    "barva": "cervena"
   }
 ]
