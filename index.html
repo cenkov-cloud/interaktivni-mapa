@@ -14,9 +14,9 @@
   <script>
     const map = L.map('map').setView([50.0755, 14.4378], 13); // Praha
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  attribution: 'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community'
+}).addTo(map);
 
     const basePath = window.location.pathname.replace(/\/[^\/]*$/, '/');
 
