@@ -110,5 +110,19 @@
     "lng": 14.4116,
     "url": "misto16.html",
     "barva": "cervena"
+  },
+   {
+    "nazev": "Zásyp v Židlochovicích",
+    "lat": 50.2486,
+    "lng": 14.4129,
+    "url": "misto17.html",
+    "barva": "modra"
+  },
+   {
+    "nazev": "Zásyp pod Židlochovicema",
+    "lat": 50.2476,
+    "lng": 14.4113,
+    "url": "misto19.html",
+    "barva": "modra"
   }
 ]
