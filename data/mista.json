@@ -187,5 +187,12 @@
     "lng": 14.4079,
     "url": "misto27.html",
     "barva": "cervena"
+  },
+  {
+    "nazev": "Žebřík u Kamene",
+    "lat": 50.2563,
+    "lng": 14.4122,
+    "url": "misto28.html",
+    "barva": "cervena"
   }
 ]
