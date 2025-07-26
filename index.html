@@ -20,7 +20,7 @@
 
     const basePath = window.location.pathname.replace(/\/[^\/]*$/, '/');
 
-    fetch('data/mista.json')
+    fetch('./data/mista.json')
       .then(response => response.json())
       .then(data => {
         data.forEach(misto => {
