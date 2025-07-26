@@ -19,5 +19,19 @@
     "lng": 14.4041,
     "url": "misto3.html",
     "barva": "modra"
+  },
+  {
+    "nazev": "Zásyp V Kloubáku",
+    "lat": 50.2341,
+    "lng": 14.4024,
+    "url": "misto4.html",
+    "barva": "modra"
+  },
+   {
+    "nazev": "Kazatelna V Kloubáku",
+    "lat": 50.2340,
+    "lng": 14.4021,
+    "url": "misto5.html",
+    "barva": "cervena"
   }
 ]
