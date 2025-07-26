@@ -68,5 +68,19 @@
     "lng": 14.4217,
     "url": "misto10.html",
     "barva": "modra"
+  },
+   {
+    "nazev": "Zásyp na Zlatkově",
+    "lat": 50.2343,
+    "lng": 14.4233,
+    "url": "misto11.html",
+    "barva": "modra"
+  },
+   {
+    "nazev": "Zásyp pod Špičákem",
+    "lat": 50.2414,
+    "lng": 14.4181,
+    "url": "misto12.html",
+    "barva": "modra"
   }
 ]
