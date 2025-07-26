@@ -33,5 +33,12 @@
     "lng": 14.4021,
     "url": "misto5.html",
     "barva": "cervena"
+  },
+  {
+    "nazev": "Zásyp ve Velkém Háji",
+    "lat": 50.2316,
+    "lng": 14.4018,
+    "url": "misto6.html",
+    "barva": "modra"
   }
 ]
