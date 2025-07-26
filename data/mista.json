@@ -96,5 +96,19 @@
     "lng": 14.4069,
     "url": "misto14.html",
     "barva": "modra"
+  },
+  {
+    "nazev": "Žebřík na Špičáku",
+    "lat": 50.2436,
+    "lng": 14.4170,
+    "url": "misto15.html",
+    "barva": "cervena"
+  },
+  {
+    "nazev": "Žebřík Pod Židlochovicema",
+    "lat": 50.2473,
+    "lng": 14.4116,
+    "url": "misto16.html",
+    "barva": "cervena"
   }
 ]
