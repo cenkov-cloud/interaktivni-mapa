@@ -131,5 +131,19 @@
     "lng": 14.4113,
     "url": "misto19.html",
     "barva": "modra"
+  },
+  {
+    "nazev": "Žebřík Doublesitz",
+    "lat": 50.2481,
+    "lng": 14.4099,
+    "url": "misto20.html",
+    "barva": "cervena"
+  },
+  {
+    "nazev": "Žebřík K políčku",
+    "lat": 50.2489,
+    "lng": 14.4118,
+    "url": "misto21.html",
+    "barva": "cervena"
   }
 ]
