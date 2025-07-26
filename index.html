@@ -22,7 +22,7 @@
   const basePath = window.location.pathname.replace(/\/[^\/]*$/, '/');
 
   // Načti body z JSON
-  fetch('data/mista.json')
+  fetch('${basePath}/data/mista.json')
     .then(response => response.json())
     .then(data => {
       data.forEach(misto => {
