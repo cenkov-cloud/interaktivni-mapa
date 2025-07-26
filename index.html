@@ -18,15 +18,18 @@
       attribution: '&copy; OpenStreetMap'
     }).addTo(map);
 
-    // Načti body z JSON
-    fetch('data/mista.json')
-      .then(response => response.json())
-      .then(data => {
-        data.forEach(misto => {
-          const marker = L.marker([misto.lat, misto.lng]).addTo(map);
-          marker.bindPopup(`<a href="\${misto.url}">\${misto.nazev}</a>`);
-        });
+    // Zjisti relativní cestu
+  const basePath = window.location.pathname.replace(/\/[^\/]*$/, '/');
+
+  // Načti body z JSON
+  fetch('data/mista.json')
+    .then(response => response.json())
+    .then(data => {
+      data.forEach(misto => {
+        const marker = L.marker([misto.lat, misto.lng]).addTo(map);
+        marker.bindPopup(`<a href="\${basePath}\${misto.url}">\${misto.nazev}</a>`);
       });
+    });
   </script>
 </body>
 </html>
