@@ -40,5 +40,12 @@
     "lng": 14.4018,
     "url": "misto6.html",
     "barva": "modra"
+  },
+  {
+    "nazev": "Zásyp v Jezírkách",
+    "lat": 50.2424,
+    "lng": 14.3852,
+    "url": "misto7.html",
+    "barva": "modra"
   }
 ]
