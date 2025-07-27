@@ -9,7 +9,9 @@
 </head>
 <body>
   <div id="map"></div>
-
+  <button id="polohaBtn" style="position: absolute; top: 10px; left: 10px; z-index: 1000;">
+  Zobrazit moji polohu
+  </button>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script>
     const map = L.map('map').setView([50.2477822, 14.4041253], 15); // Praha
@@ -86,6 +88,57 @@ fetch('./data/mista.json')
       );
     } else {
       alert('Tento prohlížeč nepodporuje určování polohy.');
+    }
+  });
+</script>
+<script>
+  let userMarker = null;
+  let userCircle = null;
+  let polohaZobrazena = false;
+
+  const btn = document.getElementById('polohaBtn');
+
+  btn.addEventListener('click', () => {
+    if (!polohaZobrazena) {
+      if ('geolocation' in navigator) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const lat = position.coords.latitude;
+            const lng = position.coords.longitude;
+
+            userMarker = L.marker([lat, lng], {
+              title: 'Tvoje poloha'
+            }).addTo(map);
+
+            userCircle = L.circle([lat, lng], {
+              radius: position.coords.accuracy,
+              color: 'blue',
+              fillOpacity: 0.1
+            }).addTo(map);
+
+            map.setView([lat, lng], 15);
+            btn.textContent = 'Skrýt moji polohu';
+            polohaZobrazena = true;
+          },
+          (error) => {
+            alert('Nepodařilo se získat aktuální polohu.');
+          }
+        );
+      } else {
+        alert('Tento prohlížeč nepodporuje určování polohy.');
+      }
+    } else {
+      // Odebrání markeru a kruhu z mapy
+      if (userMarker) {
+        map.removeLayer(userMarker);
+        userMarker = null;
+      }
+      if (userCircle) {
+        map.removeLayer(userCircle);
+        userCircle = null;
+      }
+      btn.textContent = 'Zobrazit moji polohu';
+      polohaZobrazena = false;
     }
   });
 </script>
