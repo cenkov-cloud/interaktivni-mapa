@@ -90,7 +90,7 @@ fetch('./data/mista.json')
             const lat = position.coords.latitude;
             const lng = position.coords.longitude;
 
-            userMarker = L.marker([lat, lng], {
+           userMarker = L.marker([lat, lng], {
               icon: zelenyMarker,
               title: 'Tvoje poloha'
             }).addTo(map);
