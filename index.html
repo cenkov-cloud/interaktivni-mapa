@@ -38,31 +38,6 @@ function vytvorIkonu(barva) {
     shadowSize: [41, 41]
   });
 }
-<script>
-  if ('geolocation' in navigator) {
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        const lat = position.coords.latitude;
-        const lng = position.coords.longitude;
-
-        const userMarker = L.marker([lat, lng], {
-          title: 'Tvoje poloha'
-        }).addTo(map);
-
-        userMarker.bindPopup('Tady právě jsi 📍').openPopup();
-
-        // Přiblíží mapu na polohu uživatele (volitelné)
-        map.setView([lat, lng], 15);
-      },
-      (error) => {
-        console.error('Nepodařilo se získat polohu:', error);
-        alert('Nepodařilo se získat tvou aktuální polohu.');
-      }
-    );
-  } else {
-    alert('Tento prohlížeč nepodporuje geolokaci.');
-  }
-</script>
     
 fetch('data/honitba.geojson')
   .then(res => res.json())
@@ -87,5 +62,32 @@ fetch('./data/mista.json')
     });
   });
   </script>
+<script>
+  window.addEventListener('load', () => {
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const lat = position.coords.latitude;
+          const lng = position.coords.longitude;
+
+          const userMarker = L.marker([lat, lng], {
+            title: 'Tvoje poloha'
+          }).addTo(map);
+
+          userMarker.bindPopup('Tady právě jsi 📍').openPopup();
+
+          // Přiblíží mapu na uživatele
+          map.setView([lat, lng], 15);
+        },
+        (error) => {
+          console.error('Chyba při získávání polohy:', error);
+          alert('Nepodařilo se získat aktuální polohu.');
+        }
+      );
+    } else {
+      alert('Tento prohlížeč nepodporuje určování polohy.');
+    }
+  });
+</script>
 </body>
 </html>
