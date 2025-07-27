@@ -22,6 +22,8 @@
 
     const basePath = window.location.pathname.replace(/\/[^\/]*$/, '/');
 
+    
+
 function vytvorIkonu(barva) {
   const barvy = {
     cervena: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
@@ -71,6 +73,14 @@ fetch('./data/mista.json')
   let polohaZobrazena = false;
 
   const btn = document.getElementById('polohaBtn');
+  const zelenyMarker = L.icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+   });
 
   btn.addEventListener('click', () => {
     if (!polohaZobrazena) {
@@ -81,6 +91,7 @@ fetch('./data/mista.json')
             const lng = position.coords.longitude;
 
             userMarker = L.marker([lat, lng], {
+              icon: zelenymarker,
               title: 'Tvoje poloha'
             }).addTo(map);
 
